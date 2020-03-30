@@ -1,0 +1,29 @@
+﻿@model  TesteCorreios.Models.Objeto
+
+@{
+    ViewBag.Title = "ResultadoBusca";
+}
+
+
+
+<label>Nome: </label>
+<label>@Model.nome</label>
+
+<label>Categoria: </label>
+<label>@Model.categoria</label>
+@foreach (var item in Model.eventos)
+{
+
+    if (item.Descricao == "Objeto postado")
+    {
+        <br style="border: 1px solid #00ff21" />
+    }
+    <label>codigo: </label>
+    <label>@item.codigo</label>
+
+    <label>cidade: </label>
+    <label>@item.cidade</label>
+
+    <label>Data</label>
+    <label>@item.Data</label>
+}

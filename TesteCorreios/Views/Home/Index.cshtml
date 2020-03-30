@@ -1,0 +1,11 @@
+﻿@model TesteCorreios.Models.Objeto
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" action="@Url.Action("ResultadoBusca","Home")">
+    <input type="text" name="obj" maxlength="13" />
+    <input type="submit" value="Consultar" />
+</form>
