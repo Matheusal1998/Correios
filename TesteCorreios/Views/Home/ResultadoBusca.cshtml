@@ -8,22 +8,40 @@
 
 <label>Nome: </label>
 <label>@Model.nome</label>
+<br />
 
 <label>Categoria: </label>
 <label>@Model.categoria</label>
+<br />
+
+<label>Numero</label>
+<label>@Model.numero</label>
+<label>Sigla</label>
+<label>@Model.sigla</label>
 @foreach (var item in Model.eventos)
 {
 
-    if (item.Descricao == "Objeto postado")
-    {
-        <br style="border: 1px solid #00ff21" />
-    }
     <label>codigo: </label>
     <label>@item.codigo</label>
-
+    <br />
     <label>cidade: </label>
     <label>@item.cidade</label>
-
+    <br />
     <label>Data</label>
     <label>@item.Data</label>
+    <br />
+    <label>Descricao</label>
+    <label>@item.Descricao</label>
+    <br />
+    <label>Hora</label>
+    <label>@item.Hora</label>
+    <br />
+    <label>Local</label>
+    <label>@item.local</label>
+    <br />
+    <label>Tipo</label>
+    <label>@item.Tipo</label>
+    <br />
+    <label>Uf</label>
+    <label>@item.uf</label>
 }

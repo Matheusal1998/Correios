@@ -7,7 +7,10 @@ namespace TesteCorreios.Models
 {
     public class Objeto
     {
-        
+        public Objeto()
+        {
+            eventos = new List<Evento>();
+        }
         public string numero { get; set; }
         public string sigla { get; set; }
         public string nome { get; set; }
